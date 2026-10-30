@@ -1,0 +1,25 @@
+{
+  "name": "metricas-web-cypress-lighthouse",
+  "version": "1.0.0",
+  "description": "Evaluación automatizada del rendimiento de páginas institucionales con Cypress, Lighthouse y Google Sheets.",
+  "private": true,
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run",
+    "test:mobile": "cross-env CYPRESS_DEVICE_PROFILE=mobile cypress run",
+    "test:desktop": "cross-env CYPRESS_DEVICE_PROFILE=desktop cypress run",
+    "sheets": "node scripts/push-to-sheet.js",
+    "scheduler": "node scripts/scheduler.js",
+    "report": "http-server . -p 8080 -c-1"
+  },
+  "devDependencies": {
+    "chrome-launcher": "^1.0.0",
+    "cross-env": "^7.0.3",
+    "cypress": "^15.5.0",
+    "dotenv": "^17.2.3",
+    "googleapis": "^162.0.0",
+    "http-server": "^14.1.1",
+    "lighthouse": "^12.8.2",
+    "node-cron": "^4.2.1"
+  }
+}
