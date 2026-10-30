@@ -47,7 +47,7 @@ describe("Métricas Lighthouse de páginas institucionales UAM", () => {
           cy.viewport(device.viewportWidth, device.viewportHeight);
 
           // Cypress verifica que la URL sea accesible antes de medirla.
-          cy.visit(page.url, { failOnStatusCode: false, timeout: 150000 });
+          cy.visit(page.url, { failOnStatusCode: false, timeout: 180000, pageLoadTimeout: 180000 });
           cy.location("href").should("include", "autonoma.edu.co");
 
           cy.task("runLighthouse", {
