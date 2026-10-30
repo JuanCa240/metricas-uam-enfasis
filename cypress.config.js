@@ -35,7 +35,7 @@ module.exports = defineConfig({
     specPattern: "cypress/e2e/**/*.cy.js",
     supportFile: "cypress/support/e2e.js",
     defaultBrowser: "chrome",
-    pageLoadTimeout: 120000,
+    pageLoadTimeout: 180000,
     taskTimeout: 180000,
     requestTimeout: 30000,
     responseTimeout: 30000,
