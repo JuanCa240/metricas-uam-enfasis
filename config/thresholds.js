@@ -1,0 +1,21 @@
+// Umbrales oficiales de rendimiento.
+// Las métricas de tiempo se expresan en segundos.
+
+module.exports = {
+  firstContentfulPaint: {
+    goodMax: 1.8,
+    needsImprovementMax: 3.0
+  },
+  largestContentfulPaint: {
+    goodMax: 2.5,
+    needsImprovementMax: 4.0
+  },
+  speedIndex: {
+    goodMax: 3.4,
+    needsImprovementMax: 5.8
+  },
+  performance: {
+    goodMin: 90,
+    needsImprovementMin: 50
+  }
+};

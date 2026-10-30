@@ -1,0 +1,32 @@
+{
+  "mobile": {
+    "name": "Moto G (412x823)",
+    "viewportWidth": 412,
+    "viewportHeight": 823,
+    "lighthouseConfig": {
+      "formFactor": "mobile",
+      "screenEmulation": {
+        "mobile": true,
+        "width": 412,
+        "height": 823,
+        "deviceScaleFactor": 1.75,
+        "disabled": false
+      }
+    }
+  },
+  "desktop": {
+    "name": "Desktop (1366x768)",
+    "viewportWidth": 1366,
+    "viewportHeight": 768,
+    "lighthouseConfig": {
+      "formFactor": "desktop",
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1366,
+        "height": 768,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      }
+    }
+  }
+}
